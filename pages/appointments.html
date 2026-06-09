@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang = "en">
+
+    <head>
+        <meta charset = "utf-8">
+        <title>Cheybladez</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" href="favicon.ico">
+        <link rel="stylesheet" href="/styles/main.css">
+    </head>
+    <body>
+        <header>
+            <h1>Cheybladez</h1>
+            <h2> Schedule an appointment</h2>
+        </header>
+        
+        <nav class="navbar">
+		<input type="checkbox" id="checkbox-toggle" />
+    	<label for="checkbox-toggle" class="menu-btn"></label>
+
+		<ul class="menu">
+			<li><a href = "index.html">Home</a></li>
+            <li> <a href = "about.html">About Cheyenne</a></li>
+            <li> <a>Services </a>
+                <ul class = "submenu">
+                    <li><a href = "nails.html">Acrylic nails</a></li>
+                    <li><a href = "hairstyles.html">Hair styling</a></li>
+                    <li><a class = "current" href = "#">Makeup</a></li>
+                </ul>
+            </li>
+            <li> <a href = "#" class = "current"> Appointments</a> </li>
+        </ul>
+            </nav>
+           <section>
+            <h1>Appointment information</h1>
+<form action="confirmation.html" method="post">
+	<fieldset>
+		<legend>Contact Information</legend>
+		
+		<label for = "email">Email</label>
+		<input type = "email" id = "email" name = "email" autofocus required>
+		
+		<label for = "firstName">First Name</label>
+		<input type = "text" id = "firstName" name = "firstName" required>
+
+		<label for = "lastName"> Last Name</label>
+		<input type = "text" id = "lastName" name = "lastName" required>
+
+	</fieldset>
+    
+	
+
+	<fieldset>
+		<legend>Appointment information</legend>
+		<label for = "surveyDropdown">How did you hear about me?</label>
+		<select id ="surveyDropdown" name = "surveyDropdown" required>
+			<option> </option>
+			<option> Paul Mitchell Catalog </option>
+			<option> Friends or family</option>
+			<option> Advertisement</option>
+			<option> Other</option>
+		</select>
+
+        <label for = "typeDropdown">What would you like done?</label>
+		<select id ="typeDropdown" name = "typeDropdown" required>
+			<option> </option>
+			<option> Hair styling </option>
+			<option> Haircut</option>
+			<option> Nails </option>
+			<option> Makeup</option>
+		</select>
+
+         <label for = "dayOfWeek">What day of the week would you like to schecule?</label>
+		<select id ="dayOfWeek" name = "dayOfWeek" required>
+			<option> </option>
+			<option> Tuesday </option>
+			<option> Wednesday</option>
+			<option> Thursday </option>
+			<option> Friday </option>
+            <option> Saturday </option>
+		</select>
+
+        <label for = "timeOfDay">What time would you like to schecule?</label>
+		<select id ="timeOfDay" name = "timeOfDay" required>
+			<option> </option>
+			<option> 10:00am</option>
+			<option> 11:00am</option>
+			<option> 12:00pm </option>
+			<option> 2:00pm </option>
+            <option> 3:00pm </option>
+            <option> 4:00pm </option>
+		</select>
+
+		<label for = "comments"></label>
+		<textarea id = "comments" placeholder = "Extra information (styles, allergens, etc.)"></textarea>
+	</fieldset>
+	<div>
+		<button type = "submit" class = "submit">Submit</button>
+		<button type = "reset" class = "reset">Reset</button>
+	</div>
+</form>
+            
+        </section>
+    </body>
+<footer>
+    <p>&copy;Cheybladez</p>
+</footer>
+</html>
