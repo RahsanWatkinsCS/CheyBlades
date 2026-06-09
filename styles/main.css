@@ -26,7 +26,7 @@ header{
     text-align: center;
     line-height: 1.2;
 	border-bottom: 2px solid var(--accent-color);
-    box-shadow:0px 8px 30px 8px red;
+    box-shadow:0px 7px 30px 8px red;
     
     
 	
@@ -103,12 +103,12 @@ nav{
     display: block; 
 }
 #checkbox-toggle:checked ~ .menu-btn::after {
-    content: "\2716";                    /* close (X) symbol */
+    content: "\2716";                
 }
 
 .menu li:has(.submenu) {
 	position: relative;
-	& small::after { content: "\25b6"; }  /* right triangle */
+	& small::after { content: "\25b6"; } 
 	& small { margin-left: .25em; }
 	&:hover > .submenu {
 		display: block;
